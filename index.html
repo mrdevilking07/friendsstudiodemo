@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FRIENDS STUDIO – Premium International Photography Studio & Cinematic Wedding Films. Capturing authentic Tamil and Indian weddings, pre-wedding destination romance, fashion studio portraits, and milestone events with Hollywood-grade cinema gear." />
+  <meta name="keywords" content="Friends Studio, wedding photography, Tamil wedding photographer, Indian wedding films, cinematic 4K video, pre-wedding shoot, studio portraits, event photography, luxury wedding portfolio" />
+  <meta name="author" content="Friends Studio" />
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="FRIENDS STUDIO | Luxury Cinematic Photography & Wedding Films" />
+  <meta property="og:description" content="Award-winning wedding photography, destination pre-wedding films, and editorial portraits. Capturing life's most precious stories through the lens." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85" />
+  <meta property="og:type" content="website" />
+
+  <title>FRIENDS STUDIO | Luxury Cinematic Photography & Wedding Films</title>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- React 18 & ReactDOM for the Hero Cinematic Slideshow -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Friends Studio Home">
+        <div class="brand-symbol">FS</div>
+        <div class="brand-text">
+          <span class="brand-name">FRIENDS STUDIO</span>
+          <span class="brand-tagline">Cinematic Photography & Films</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#showreel" class="nav-link">Showreel</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#craft" class="nav-link">Our Craft</a></li>
+          <li><a href="#testimonials" class="nav-link">Stories</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-gold open-booking-btn">
+          <span>Book Date</span>
+          <i class="fas fa-calendar-check"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. HERO SECTION – CINEMATIC AUTO-CHANGING BACKGROUND SLIDESHOW
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- React 18 Auto-Changing Slideshow Mount -->
+    <div id="hero-slideshow-root">
+      <!-- High-resolution initial slide for instant rendering while scripts initialize -->
+      <div class="hero-slideshow-container">
+        <div class="hero-slide active" style="background-color: #14110e;">
+          <img 
+            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=2000&q=85" 
+            alt="Indian Wedding Photography" 
+            class="hero-slide-bg ken-burns" 
+            loading="eager" 
+          />
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Stable Text Overlay Above the Slideshow -->
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span class="hero-badge-text">✦ PREMIUM INTERNATIONAL ATELIER ✦</span>
+      </div>
+
+      <h1 class="hero-title">
+        FRIENDS STUDIO
+      </h1>
+
+      <p class="hero-tagline text-gold-gradient">
+        &ldquo;CAPTURING YOUR BEAUTIFUL MOMENTS&rdquo;
+      </p>
+
+      <p class="hero-subtext">
+        Professional Photography | Cinematic Films
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#gallery" class="btn btn-gold">
+          <i class="fas fa-camera-retro"></i>
+          <span>EXPLORE OUR WORK</span>
+        </a>
+        <a href="#contact" class="btn btn-glass open-booking-btn">
+          <i class="fas fa-calendar-check"></i>
+          <span>BOOK A PHOTOSHOOT</span>
+        </a>
+      </div>
+
+      <!-- Studio Credentials Bar -->
+      <div class="hero-stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">1,500+</div>
+          <div class="stat-label">Weddings Captured</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">12+</div>
+          <div class="stat-label">Years of Artistry</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4K & 8K</div>
+        <div class="stat-label">Cinema Masters</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Client Ecstasy</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       2. PILLARS OF ARTISTRY (Curated Highlights)
+       ========================================================================== -->
+  <section class="pillars-section">
+    <div class="container">
+      <div class="pillars-grid">
+        <!-- Pillar 1: Weddings -->
+        <div class="pillar-card" onclick="document.querySelector('[data-filter=\'weddings\']').click(); document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Traditional Wedding Photography" class="pillar-bg" loading="lazy" />
+          <div class="pillar-overlay">
+            <span class="pillar-tag">Traditional & Candid</span>
+            <h3 class="pillar-title">Royal Weddings</h3>
+            <p class="pillar-desc">Sacred Tamil rituals, heirloom silk sarees & heartfelt vows.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Pre-Wedding -->
+        <div class="pillar-card" onclick="document.querySelector('[data-filter=\'pre-wedding\']').click(); document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});">
+          <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80" alt="Pre-Wedding Cinema" class="pillar-bg" loading="lazy" />
+          <div class="pillar-overlay">
+            <span class="pillar-tag">Destination Romance</span>
+            <h3 class="pillar-title">Pre-Wedding Cinema</h3>
+            <p class="pillar-desc">Sunset coasts, misty pine valleys & effortless chemistry.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Portraits -->
+        <div class="pillar-card" onclick="document.querySelector('[data-filter=\'portraits\']').click(); document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Fine Art Studio Portraits" class="pillar-bg" loading="lazy" />
+          <div class="pillar-overlay">
+            <span class="pillar-tag">Studio & Haute Couture</span>
+            <h3 class="pillar-title">Fine Art Portraits</h3>
+            <p class="pillar-desc">Chiaroscuro lighting, editorial fashion & timeless black-and-white.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Events -->
+        <div class="pillar-card" onclick="document.querySelector('[data-filter=\'events\']').click(); document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});">
+          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" alt="Birthdays and Milestones" class="pillar-bg" loading="lazy" />
+          <div class="pillar-overlay">
+            <span class="pillar-tag">Celebrations & Galas</span>
+            <h3 class="pillar-title">Birthdays & Events</h3>
+            <p class="pillar-desc">Sparkling cake-cutting, golden jubilees & grand galas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SECTION 8: DEDICATED SHOWREEL SECTION – "OUR STORIES THROUGH THE LENS"
+       ========================================================================== -->
+  <section class="showreel-section" id="showreel">
+    <div class="container">
+      <div class="showreel-header">
+        <span class="section-tag">Cinematic Films & Teasers</span>
+        <h2 class="section-title text-gold-gradient">OUR STORIES THROUGH THE LENS</h2>
+        <p class="section-subtitle">
+          Every love story has an unrepeatable rhythm. We capture emotional tears of joy, the whispered promises, and the grandeur of royal celebrations through Hollywood-grade anamorphic glass.
+        </p>
+      </div>
+
+      <!-- Video Showreel Cards Grid -->
+      <div class="showreel-grid" id="showreelGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. CURATED MASTER GALLERY (Masonry + Filters + Lightbox)
+       ========================================================================== */
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <span class="section-tag">Visual Masterpieces</span>
+        <h2 class="section-title">THE CURATED PORTFOLIO</h2>
+        <p class="section-subtitle">
+          Explore our signature captures across royal Indian weddings, golden-hour pre-wedding destinations, sculpted studio portraits, and joyful celebrations.
+        </p>
+
+        <!-- Filter Buttons Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Works (18)</button>
+          <button class="filter-btn" data-filter="weddings">Weddings & Rituals</button>
+          <button class="filter-btn" data-filter="pre-wedding">Pre-Wedding & Sunset</button>
+          <button class="filter-btn" data-filter="portraits">Studio & Portraits</button>
+          <button class="filter-btn" data-filter="events">Birthdays & Events</button>
+        </div>
+      </div>
+
+      <!-- Masonry Gallery Grid -->
+      <div class="gallery-masonry" id="galleryGrid">
+        <!-- Populated dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PHOTOGRAPHY SERVICES SECTION (Distinct High-Res Image Per Card)
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-tag">Bespoke Offerings</span>
+        <h2 class="section-title text-gold-gradient">OUR PHOTOGRAPHY SERVICES</h2>
+        <p class="section-subtitle">
+          Tailored experiences for life's momentous milestones. Each package is executed with master cinematographers, high-resolution cameras, and bespoke archival print finishing.
+        </p>
+      </div>
+
+      <!-- 8 Comprehensive Service Cards -->
+      <div class="services-grid" id="servicesGrid">
+        <!-- Populated dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. STUDIO CRAFT & PEDIGREE (Gear & Artistry)
+       ========================================================================== -->
+  <section class="gear-section" id="craft">
+    <div class="container">
+      <div class="gear-grid">
+        <div class="gear-visual-frame">
+          <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=85" alt="Cinema Camera Rig" class="gear-visual-img" loading="lazy" />
+          <div class="gear-badge-floating">
+            <div class="gear-badge-title">RED V-RAPTOR 8K & SONY FX6</div>
+            <div class="gear-badge-desc">Netflix-Approved 16-Bit Cinema Raw Pipeline</div>
+          </div>
+        </div>
+
+        <div class="gear-content">
+          <span class="section-tag">Precision & Artistry</span>
+          <h3>THE ARTISTRY BEHIND EVERY FRAME</h3>
+          <p class="gear-lead">
+            We don't merely observe; we sculpt light. Our studio combines international cinema-grade optics with an intuitive understanding of traditional South Indian ritual aesthetics.
+          </p>
+
+          <div class="gear-list">
+            <div class="gear-item">
+              <div class="gear-item-title">Anamorphic Prime Glass</div>
+              <div class="gear-item-detail">Cooke & Zeiss optics delivering organic cinematic flares and dreamy bokeh.</div>
+            </div>
+            <div class="gear-item">
+              <div class="gear-item-title">Profoto Studio Strobes</div>
+              <div class="gear-item-detail">Bespoke light shaping modifiers for museum-quality portrait skin tones.</div>
+            </div>
+            <div class="gear-item">
+              <div class="gear-item-title">Inspire 3 5.1K Aerials</div>
+              <div class="gear-item-detail">DGCA-licensed drone cinematography providing majestic venue panoramas.</div>
+            </div>
+            <div class="gear-item">
+              <div class="gear-item-title">Kodak Film Emulation</div>
+              <div class="gear-item-detail">Master colorist DaVinci Resolve grading calibrated for true heirloom tones.</div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-gold open-booking-btn">
+            <span>Schedule Studio Consultation</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. TESTIMONIALS & CLIENT PRAISE
+       ========================================================================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+        <span class="section-tag">Heartfelt Words</span>
+        <h2 class="section-title">WORDS FROM OUR COUPLES</h2>
+        <p class="section-subtitle">
+          The true measure of our work lies in the tears, goosebumps, and joyful smiles shared by our patrons across the globe.
+        </p>
+      </div>
+
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <!-- Populated dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. INVITATION & BOOKING STRIP
+       ========================================================================== -->
+  <section class="booking-strip" id="contact">
+    <div class="container">
+      <span class="section-tag">Reserve Your Date</span>
+      <h2 class="text-gold-gradient">LET'S CREATE SOMETHING UNFORGETTABLE</h2>
+      <p>
+        Dates fill 6 to 12 months in advance for prime wedding muhurthams. Connect with our principal creative directors today to secure your cinematic legacy.
+      </p>
+      <button class="btn btn-gold open-booking-btn" style="padding: 16px 42px; font-size: 0.95rem;">
+        <i class="fas fa-gem"></i>
+        <span>Request Bespoke Consultation</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-symbol">FS</div>
+            <div class="brand-text">
+              <span class="brand-name">FRIENDS STUDIO</span>
+              <span class="brand-tagline">Cinematic Photography & Films</span>
+            </div>
+          </div>
+          <p>
+            An international boutique photography atelier celebrating sacred heritage, authentic emotion, and timeless romance through the lens of pure cinema.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Portfolios</h4>
+          <ul class="footer-links">
+            <li><a href="#gallery">Royal Weddings</a></li>
+            <li><a href="#gallery">Pre-Wedding Romance</a></li>
+            <li><a href="#gallery">Studio Portraits</a></li>
+            <li><a href="#gallery">Birthdays & Galas</a></li>
+            <li><a href="#showreel">4K Film Teasers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Studio Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Traditional Muhurtham</a></li>
+            <li><a href="#services">Drone Cinematography</a></li>
+            <li><a href="#services">Editorial Fine Art</a></li>
+            <li><a href="#services">Heirloom Flush Albums</a></li>
+            <li><a href="#services">Live 4K Multi-Cast</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Connect & Visit</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" style="color: var(--gold-primary); margin-top: 3px;"></i>
+            <span>Friends Studio Atelier, No. 42 Heritage Boulevard, ECR, Chennai, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt" style="color: var(--gold-primary); margin-top: 3px;"></i>
+            <span>+91 98400 12345 / +91 98400 67890</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope" style="color: var(--gold-primary); margin-top: 3px;"></i>
+            <span>curator@friendsstudio.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 FRIENDS STUDIO. All Rights Reserved. Crafted for discerning couples and patrons worldwide.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Commission</a>
+          <a href="#">Licensing & Rights</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: FULLSCREEN IMAGE LIGHTBOX
+       ========================================================================== -->
+  <div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Fullscreen Photo View">
+    <span class="lightbox-counter" id="lightboxCounter">01 / 18</span>
+    <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">
+      <i class="fas fa-times"></i>
+    </button>
+    <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrev" aria-label="Previous Image">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNext" aria-label="Next Image">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="lightbox-content-box">
+      <img src="" alt="" id="lightboxImage" class="lightbox-image" />
+      <div class="lightbox-caption-bar">
+        <h3 id="lightboxTitle" class="lightbox-title"></h3>
+        <p id="lightboxCaption" class="lightbox-caption-text"></p>
+        <div id="lightboxSpecs" class="lightbox-specs-pill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: CINEMATIC VIDEO LIGHTBOX (Showreel Player)
+       ========================================================================== -->
+  <div class="video-lightbox" id="videoLightbox" role="dialog" aria-modal="true" aria-label="Cinematic Film Player">
+    <div class="video-modal-container">
+      <div class="video-modal-header">
+        <h3 id="videoModalTitle" class="video-modal-title">Wedding Cinema Film</h3>
+        <button class="modal-close-btn" id="videoLightboxClose" aria-label="Close Film Viewer" style="position: static; width: 34px; height: 34px;">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="video-modal-player-wrap">
+        <video id="videoModalPlayer" class="video-modal-player" controls preload="auto" playsinline>
+          <source src="" type="video/mp4" />
+          Your browser does not support HTML5 video playback.
+        </video>
+      </div>
+      <div class="video-modal-footer">
+        <span id="videoModalSpecs" class="video-modal-badge">4K UHD Master • 24fps DCI</span>
+        <span>Friends Studio Cinema Archive</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: BESPOKE BOOKING & CONSULTATION
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-label="Book a Photography Consultation">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeBookingBtn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <span class="section-tag" style="margin-bottom: 8px;">Direct Reservation</span>
+      <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 6px; color: var(--gold-champagne);">
+        RESERVE YOUR DATE
+      </h3>
+      <p style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--text-muted); margin-bottom: 24px;">
+        Share your vision with our creative team. We will arrange a personal visual storyboard and portfolio walkthrough.
+      </p>
+
+      <form id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-input" required placeholder="e.g. Priya & Karthik" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" class="form-input" required placeholder="+91 98765 43210" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-input" required placeholder="priya@example.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Auspicious Event Date *</label>
+            <input type="date" class="form-input" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Primary Service *</label>
+            <select class="form-select" id="bookingServiceSelect" required>
+              <option value="Royal & Traditional Weddings">Royal & Traditional Weddings</option>
+              <option value="Pre-Wedding & Destination Cinema">Pre-Wedding & Destination Cinema</option>
+              <option value="Cinematic 4K Wedding Films">Cinematic 4K Wedding Films</option>
+              <option value="Haute Couture & Fine Art Portraits">Haute Couture & Fine Art Portraits</option>
+              <option value="Birthdays, Galas & Milestones">Birthdays, Galas & Milestones</option>
+              <option value="Maternity & Newborn Fine Art">Maternity & Newborn Fine Art</option>
+              <option value="Drone Aerials & Live Multi-Cast">Drone Aerials & Live Multi-Cast</option>
+              <option value="Heirloom Flush-Mount Albums">Heirloom Flush-Mount Albums</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Event Destination / Venue</label>
+            <input type="text" class="form-input" placeholder="e.g. Chennai / Mahabalipuram / Ooty" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Tell Us About Your Vision & Traditions</label>
+          <textarea class="form-textarea" rows="3" placeholder="Share details about your muhurtham timing, special rituals, guest count, or visual preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px; font-size: 0.9rem;">
+          <i class="fas fa-paper-plane"></i>
+          <span>Submit Consultation Request</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/gallery-data.js"></script>
+  <script src="js/hero-slideshow.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
